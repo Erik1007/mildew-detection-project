@@ -1,12 +1,4 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-## Gitpod Template Instructions
-
-Welcome,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Gitpod Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Gitpod Template Instructions at least once, though! It contains some important information about Gitpod and the extensions we use. 
 
 ## Gitpod Reminders
 
@@ -34,15 +26,24 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 * 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+
 * 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
+* 1 - The ML image visualizer will be able to differentiate between a healthy cherry leafe and an infected cherry leaf with at least 97% accuracy.
+
+* 2 - The ML image visualizer will decrease the amount of time needed to differentiate between the images thereby saving the employee and company both time and money during the inspection process.
+
+* 3 - Validation of the image visualizer will come from the the ML pipline performance of the validation and test set differentiating between an infected leaf and and a healthy leaf with at least 97% accuracy.
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+* 1 - The company requires a ML data visualization tool to efficiently and accuratly determine a healthy cherry leaf from an infected cherry leaf. 
+
+* 2 - The company requires a data visualization tool that can be used widespread through the company in order to save employee time, and company resources. 
+
+* 3 - The company will benefit by saving time, money, resources and ultimately by increasing the amount of healthy produc to the market, thereby increasing the amount of revenue brought into the company.
 
 
 ## ML Business Case
