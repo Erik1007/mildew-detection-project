@@ -1,4 +1,6 @@
+## Mildew Detection in Cherry Leaves Project Summary:
 
+This project is to facilitate the means to create a Data Analysis Machine Learning Tool that can accuratly determine if an upladed image of a Cherry Leafe contains a healthy Cherry Leaf or one infected with a powedery Mildew.
 
 ## Gitpod Reminders
 
@@ -47,10 +49,35 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+* 1 - The business objective: Devising a method/tool to increase accuracy and efficency evaluating a leaf infected with powedery mildew from a healthy leaf.
+
+* 2 - The Customer requires a dashboard containing the ability to upload images of leaves for the machine to quickly determine if the image of the leaf is contains a healthy or a leaf infected with powdery mildew with 97% accuracy.
+
+* 3 - The Customer requires for propietary reasons that thier internal data remains secret so as to not give the competition the ability to match the production of cherry leaves delivered to the market.
+
+* 4 - The inputs are images of both healthy and infected cherry leaves that will be used to train the ML tool to learn the difference and the expected output is a ML tool that with an accuracy of 97% determines if the uploaded image shows a healthy or infected leaf.
+
+* 5 - Conventional data analysis can be used to visually inspect and differentiate the images of the leaves to determine if the image contains a healthy leaf or one infected with powdery mildew.
 
 
 ## Dashboard Design
+
+* 1 - A project summary page, showing the project dataset summary and the client's requirements.
+
+* 2 - A page listing your findings related to a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew
+
+* 3 - A page containing:
+
+        - A link to download a set of cherry leaf images for live prediction (you may use the Kaggle repository that was provided to you).
+
+        - A User Interface with a file uploader widget. The user should have the capacity to upload multiple images. For each image, it will display the image and a prediction statement, indicating if a cherry leaf is healthy or contains powdery mildew and the probability associated with this statement.
+
+        - A table with the image name and prediction results, and a download button to download the table.
+
+* 4 - A page indicating your project hypothesis and how you validated it across the project.
+
+* 5 - A technical page displaying your model performance.
+
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
 * Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
 
@@ -80,7 +107,6 @@ To save time in this process, the IT team suggested an ML system that detects in
 ## Credits 
 
 * In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
 ### Content 
 
