@@ -28,6 +28,25 @@ def page_project_summary_body():
         )
 
     st.info(
-        f""
+        f"A visual comparrison machine learning (ML) tool will enable employees through out the company's vast properties "
+        f"to quickly upload images fo Cherry Tree leaves to determin fi they are infectoed or not. This ML tool "
+        f"will be at least 97% accurate and significantly faster than the previous manual procedure. This ML tool will "
+        f"save the company time, money, resources and labor; thus positivly impacting the financial outcome."
     )
+
+    st.write("### Business Requirements:")
+    if st.checkbox("Requiment 1:"):
+        st.info(
+            f"The study includes analysis on: "
+            f" - average images and variability images for each class (healthy or powdery mildew) "
+            f" - the differences between average healthy and average powdery mildew cherry leaves "
+            f" - an image montage for each class "
+        )
+
+    if st.checkbox("Requirement 2:"):
+        st.info(
+            f"Deliver an ML system that is capable of predicting whether a cherry leaf is healthy or contains powdery mildew "
+        )
+
+    
     )
