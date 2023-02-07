@@ -1,21 +1,37 @@
-## Mildew Detection in Cherry Leaves Project Summary:
+********************
+# Mildew Detection in Cherry Leaves
+********************
+
+
+********************
+## Table of Contents:
+1. [Introduction](#Introduction)
+2. [Business Requirements](#Business-Requirements)
+3. [Hypothesis and Validation](#Hypothesis-and-Validation)
+4. [ML Task Rationale](#ML-Task-Rationale)
+5. [ML Business Case](#ML-Business-Case)
+6. [Dashboard Design](#Dashboard-Design)
+7. [Unfixed Bugs](#Unfixed-Bugs)
+8. [Deployment](#Deployment)
+9. [Data Analysis and Machine Learning Libraries](#Data-Analysis-and-Machine-Learning-Libraries)
+10. [Credits](#Credits)
+11. [Acknowledgements](#Acknowledgements)
+********************
+
+
+
+********************
+## Introduction
+********************
+
 
 This project is to facilitate the means to create a Data Analysis Machine Learning Tool that can accuratly determine if an upladed image of a Cherry Leafe contains a healthy Cherry Leaf or one infected with a powedery Mildew.
 
-## Gitpod Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 
+********************
 ## Business Requirements
+********************
 The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute.  The company has thousands of cherry trees, located on multiple farms across the country. As a result, this manual process is not scalable due to the time spent in the manual process inspection.
 
 To save time in this process, the IT team suggested an ML system that detects instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests, and if this initiative is successful, there is a realistic chance to replicate this project for all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
@@ -26,7 +42,10 @@ To save time in this process, the IT team suggested an ML system that detects in
 * 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
 
-## Hypothesis and how to validate?
+
+********************
+## Hypothesis and Validation
+********************
 
 * 1 - Cherry Leaves infected with powdery mildew have white blotches, streaks and surface making them appear
 differently than healthy Cherry leaves
@@ -38,7 +57,11 @@ differently than healthy Cherry leaves
 * 4 - Validation of the image visualizer will come from the the ML pipline performance of the validation and test set differentiating between an infected leaf and and a healthy leaf with at least 97% accuracy.
 
 
-## The rationale to map the business requirements to the Data Visualisations and ML tasks
+
+********************
+## ML Task Rationale
+********************
+
 * 1 - The company requires a ML data visualization tool to efficiently and accuratly determine a healthy cherry leaf from an infected cherry leaf. 
 
 * 2 - The company requires a data visualization tool that can be used widespread through the company in order to save employee time, and company resources. 
@@ -46,7 +69,11 @@ differently than healthy Cherry leaves
 * 3 - The company will benefit by saving time, money, resources and ultimately by increasing the amount of healthy produc to the market, thereby increasing the amount of revenue brought into the company.
 
 
+
+********************
 ## ML Business Case
+********************
+
 * 1 - The business objective: Devising a method/tool to increase accuracy and efficency evaluating a leaf infected with powedery mildew from a healthy leaf.
 
 * 2 - The Customer requires a dashboard containing the ability to upload images of leaves for the machine to quickly determine if the image of the leaf is contains a healthy or a leaf infected with powdery mildew with 97% accuracy.
@@ -58,7 +85,9 @@ differently than healthy Cherry leaves
 * 5 - Conventional data analysis can be used to visually inspect and differentiate the images of the leaves to determine if the image contains a healthy leaf or one infected with powdery mildew.
 
 
+********************
 ## Dashboard Design
+********************
 
 * 1 - A project summary page, showing the project dataset summary and the client's requirements.
 
@@ -80,10 +109,18 @@ differently than healthy Cherry leaves
 * Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
 
 
+********************
 ## Unfixed Bugs
+********************
+
 * You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
+
+********************
 ## Deployment
+********************
+
+
 ### Heroku
 
 * The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
@@ -98,14 +135,33 @@ differently than healthy Cherry leaves
 6. If the slug size is too large then add large files not required for the app to the .slugignore file. 
 
 
-## Main Data Analysis and Machine Learning Libraries
+## Gitpod Reminders
+
+To log into the Heroku toolbelt CLI:
+
+1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
+2. Scroll down to the *API Key* and click *Reveal*
+3. Copy the key
+4. In Gitpod from the terminal, run `heroku_config`
+5. Paste in your API key when asked
+
+You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+
+********************
+## Data Analysis and Machine Learning Libraries
+********************
+
+
 * Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
 
-
+********************
 ## Credits 
+********************
+
 
 - Assistance and support for this project came in two main groups: **content** and **data/images**. Below, youll find sitings for both groups and links to each source:
 
+********************
 ### Content 
 
 * [Code Institute Malaria Walk Through Project](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/) was heavily used for instructional purposes, and guidance through the development of this project.
@@ -120,6 +176,7 @@ differently than healthy Cherry leaves
 
 * The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
 
+********************
 ### Dataset / Media
 
 * [Kaggle Cheery Leaves Dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) was used as the source for the data set and the images for this project
@@ -127,5 +184,7 @@ differently than healthy Cherry leaves
 * The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. 
 
 
-## Acknowledgements (optional)
+
+********************
+## Acknowledgements
 * I would like to thank my mentor **Marcel Mulders** for his time, help, expertise and especially for his motivation during the creation and execution of this project.
