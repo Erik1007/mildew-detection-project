@@ -13,8 +13,12 @@ def page_project_summary_body():
         f"However, as a naturally growing product, Cherry Trees and the leaves are subject to fungal infections, such as "
         f"Powdery Mildew. According to [Wikipwedia](https://en.wikipedia.org/wiki/Powdery_mildew), the ascomycete fungi "
         f"attacks and infects the lower leaves in more humid climates with devestating effects on the life of the  "
-        f"host plant reducing plant harvest and other future harm. The fungi spores spread with air movement making it   "
-        f"vital to quickly identify infected leaves and treat them preventing the infection from causing further damage.\n\n"
+        f"host plant reducing plant harvest and other future harm. Healthy tree cellss are darker in color as that aids "
+        f"the photosyntheis process of trapping light; the powdery mildew leaves change the pigment of the tree leaf cells, "
+        f"inhibiting the tree's ability to take in light and to photosythesize light into energy which directly impacts "
+        f"the tree's ability to grow and thrive as a living organism. The fungi spores spread with air movement making "
+        f"fungal transimition multivectoral and therefore vital to quickly identify infected leaves and treat them "
+        f"preventing the infection from causing further damage.\n\n"
     )
 
     if st.checkbox("### Problem Statement:"):
