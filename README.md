@@ -33,11 +33,15 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## Hypothesis and how to validate?
-* 1 - The ML image visualizer will be able to differentiate between a healthy cherry leafe and an infected cherry leaf with at least 97% accuracy.
 
-* 2 - The ML image visualizer will decrease the amount of time needed to differentiate between the images thereby saving the employee and company both time and money during the inspection process.
+* 1 - Cherry Leaves infected with powdery mildew have white blotches, streaks and surface making them appear
+differently than healthy Cherry leaves
 
-* 3 - Validation of the image visualizer will come from the the ML pipline performance of the validation and test set differentiating between an infected leaf and and a healthy leaf with at least 97% accuracy.
+* 2 - The ML image visualizer will be able to differentiate between a healthy cherry leafe and an infected cherry leaf with at least 97% accuracy.
+
+* 3 - The ML image visualizer can help decrease the amount of time needed to differentiate between the images thereby saving the employee and company both time and money during the inspection process.
+
+* 4 - Validation of the image visualizer will come from the the ML pipline performance of the validation and test set differentiating between an infected leaf and and a healthy leaf with at least 97% accuracy.
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
@@ -110,9 +114,15 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+* [Code Institute Malaria Walk Through Project](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/) was heavily used for instructional purposes, and guidance through the development of this project.
+
+* [Streamlit](https://docs.streamlit.io/library/api-reference/write-magic/st.write) documentation was used for assistance in the writting the app pages
+
+* [GyanShashwat1611/WalkthroughProject01](https://github.com/GyanShashwat1611/WalkthroughProject01) github repository was used for code reference and assistance for in the jupyter notebook set up, code and execution; as well as for the app pages design, set up and code
+
+* [valerieoni/mildew-detection](https://github.com/valerieoni/mildew-detection) github repository was used for readme guidance and code reference. 
+
+* The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
 
 ### Media
 

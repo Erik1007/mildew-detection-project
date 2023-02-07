@@ -3,9 +3,10 @@ import matplotlib.pyplot as plt
 
 def page_project_summary_body():
 
-    st.write("## Project Summary Overview")
+    st.title("Project Summary Overview")
 
-    st.info(### General Information:
+    st.header("General Information: ")
+    st.info(
         f"Cherry Leaves are an intergral ingrediant found in numerous products world wide, making them a big business "
         f"Depending on how they are used, the Cherry Leaves can be found in anything from Tea, to skin care products "
         f"to over the counter vitamens and even used medicanally to help boost testosterone and clense the liver "
@@ -34,19 +35,17 @@ def page_project_summary_body():
         f"save the company time, money, resources and labor; thus positivly impacting the financial outcome."
     )
 
-    st.write("### Business Requirements:")
+    st.header("Business Requirements: ")
     if st.checkbox("Requiment 1:"):
         st.info(
             f"The study includes analysis on: "
-            f" - average images and variability images for each class (healthy or powdery mildew) "
-            f" - the differences between average healthy and average powdery mildew cherry leaves "
-            f" - an image montage for each class "
+            f" - average images and variability images for each class (healthy or powdery mildew)."
+            f" - the differences between average healthy and average powdery mildew cherry leaves."
+            f" - an image montage for each class."
         )
 
     if st.checkbox("Requirement 2:"):
         st.info(
-            f"Deliver an ML system that is capable of predicting whether a cherry leaf is healthy or contains powdery mildew "
+            f"Deliver an ML system that is capable of predicting whether a cherry leaf is healthy or contains powdery mildew."
         )
 
-    
-    )
