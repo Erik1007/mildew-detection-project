@@ -1,10 +1,8 @@
-********************
 # Mildew Detection in Cherry Leaves
 ********************
 
-
 ********************
-## Table of Contents:
+## Table of Contents
 1. [Introduction](#Introduction)
 2. [Business Requirements](#Business-Requirements)
 3. [Hypothesis and Validation](#Hypothesis-and-Validation)
@@ -20,12 +18,14 @@
 
 
 
+
 ********************
 ## Introduction
 ********************
 
 
 This project is to facilitate the means to create a Data Analysis Machine Learning Tool that can accuratly determine if an upladed image of a Cherry Leafe contains a healthy Cherry Leaf or one infected with a powedery Mildew.
+
 
 
 
@@ -40,6 +40,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 * 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 
 * 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+
 
 
 
