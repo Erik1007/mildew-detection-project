@@ -152,8 +152,15 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ## Data Analysis and Machine Learning Libraries
 ********************
 
+* Pandas is used for data analysis, especially for performing statstical analysis.
 
-* Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+* Numpy is used to handle multi-dimensional arrays,  including providing a wide set of mathematical functions to operate on these arrays.
+
+* Matplotlib is used for data visualization including embedding plotts in Jupyter notebooks.
+
+* Plotly is used for plotting data, functions, and to add animation to data visualization.
+
+* Scikit-learn contains tools used for predictive analysis, specifially used in this case to train the machine learning models for classification and clustetring.
 
 ********************
 ## Credits 
@@ -174,6 +181,8 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 * [GyanShashwat1611/WalkthroughProject01](https://github.com/GyanShashwat1611/WalkthroughProject01) github repository was used for code reference and assistance for in the jupyter notebook set up, code and execution; as well as for the app pages design, set up and code
 
 * [valerieoni/mildew-detection](https://github.com/valerieoni/mildew-detection) github repository was used for readme guidance and code reference. 
+
+* [HaimanotA/Instant-Mildew-Detector](https://github.com/HaimanotA/Instant-Mildew-Detector) github repository was used for code reference and readme guidance
 
 * The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
 
