@@ -25,9 +25,9 @@
 ## Introduction
 ********************
 
-A customer is in search of a more efficient way of determining if their crop (Cherry Leaves) has been infected with a powdery mildew fungi or if it healthy. Thier current method of crop inspection is to manually inspect leaves on every tree in thier plantation; which is both time consumming and expensive.  
-This project is to facilitate the means to create a Data Analysis Machine Learning Tool that can accuratly determine if an upladed image of a Cherry Leafe contains a healthy Cherry Leaf or one infected with a powedery Mildew. 
-The outcome goal of this project is to positivly impact the customers' profit margins by combining visual imagary with Machine Learning to save time, labor, resources and most of all, the health of the harvest. 
+A customer is in search of a more efficient way of determining if their crop (Cherry Leaves) has been infected with a powdery mildew fungus or if it is healthy. Their current method of crop analysis is to manually inspect the leaves on every tree in their plantation, which is both time consuming and resource expensive.  
+This project is to facilitate the means to create a Predictive Analysis Machine Learning Tool that can accurately and quickly determine if an uploaded image of a Cherry Leaf contains a healthy Cherry Leaf or one infected with a powdery Mildew. 
+The outcome goal of this project is to positively impact the customers' profit margins by combining visual imagery with Machine Learning to save time, labour, resources and most of all, the health of the harvest. 
 
 
 
@@ -40,9 +40,9 @@ The cherry plantation crop from Farmy & Foods is facing a challenge where their 
 To save time in this process, the IT team suggested an ML system that detects instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests, and if this initiative is successful, there is a realistic chance to replicate this project for all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
 
 
-* 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 
-* 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
 
 
@@ -51,14 +51,14 @@ To save time in this process, the IT team suggested an ML system that detects in
 ## Hypothesis and Validation
 ********************
 
-* 1 - Cherry Leaves infected with powdery mildew have white blotches, streaks and surface making them appear
+1 - Cherry Leaves infected with powdery mildew have white blotches, streaks and surface making them appear
 differently than healthy Cherry leaves
 
-* 2 - The ML image visualizer will be able to differentiate between a healthy cherry leafe and an infected cherry leaf with at least 97% accuracy.
+2 - The ML image visualizer will be able to differentiate between a healthy cherry leaf and an infected cherry leaf with at least 97% accuracy.
 
-* 3 - The ML image visualizer can help decrease the amount of time needed to differentiate between the images thereby saving the employee and company both time and money during the inspection process.
+3 - The ML image visualizer can help decrease the amount of time needed to differentiate between the images thereby saving the employee and company both time and money during the inspection process.
 
-* 4 - Validation of the image visualizer will come from the the ML pipline performance of the validation and test set differentiating between an infected leaf and and a healthy leaf with at least 97% accuracy.
+4 - Validation of the image visualizer will come from the ML pipeline performance of the validation and test set differentiating between an infected leaf and and a healthy leaf with at least 97% accuracy.
 
 
 
@@ -66,11 +66,11 @@ differently than healthy Cherry leaves
 ## ML Task Rationale
 ********************
 
-* 1 - The company requires a ML data visualization tool to efficiently and accuratly determine a healthy cherry leaf from an infected cherry leaf. 
+1 - The company requires a ML data visualization tool to efficiently and accurately determine a healthy cherry leaf from an infected cherry leaf. 
 
-* 2 - The company requires a data visualization tool that can be used widespread through the company in order to save employee time, and company resources. 
+2 - The company requires a data visualization tool that can be used widespread through the company in order to save employee time, and company resources. 
 
-* 3 - The company will benefit by saving time, money, resources and ultimately by increasing the amount of healthy produc to the market, thereby increasing the amount of revenue brought into the company.
+3 - The company will benefit by saving time, money, resources and ultimately by increasing the amount of healthy produce to the market, thereby increasing the amount of revenue brought into the company.
 
 
 
@@ -78,15 +78,15 @@ differently than healthy Cherry leaves
 ## ML Business Case
 ********************
 
-* 1 - The business objective: Devising a method/tool to increase accuracy and efficency evaluating a leaf infected with powedery mildew from a healthy leaf.
+1 - The business objective: Devising a method/tool to increase accuracy and efficiency evaluating a leaf infected with powdery mildew from a healthy leaf.
 
-* 2 - The Customer requires a dashboard containing the ability to upload images of leaves for the machine to quickly determine if the image of the leaf is contains a healthy or a leaf infected with powdery mildew with 97% accuracy.
+2 - The Customer requires a dashboard containing the ability to upload images of leaves for the machine to quickly determine if the image of the leaf is contains a healthy or a leaf infected with powdery mildew with 97% accuracy.
 
-* 3 - The Customer requires for propietary reasons that thier internal data remains secret so as to not give the competition the ability to match the production of cherry leaves delivered to the market.
+3 - The Customer requires for proprietary reasons that their internal data remains secret so as to not give the competition the ability to match the production of cherry leaves delivered to the market.
 
-* 4 - The inputs are images of both healthy and infected cherry leaves that will be used to train the ML tool to learn the difference and the expected output is a ML tool that with an accuracy of 97% determines if the uploaded image shows a healthy or infected leaf.
+4 - The inputs are images of both healthy and infected cherry leaves that will be used to train the ML tool to learn the difference and the expected output is a ML tool that with an accuracy of 97% determines if the uploaded image shows a healthy or infected leaf.
 
-* 5 - Conventional data analysis can be used to visually inspect and differentiate the images of the leaves to determine if the image contains a healthy leaf or one infected with powdery mildew.
+5 - Conventional data analysis can be used to visually inspect and differentiate the images of the leaves to determine if the image contains a healthy leaf or one infected with powdery mildew.
 
 
 
@@ -94,11 +94,11 @@ differently than healthy Cherry leaves
 ## Dashboard Design
 ********************
 
-* 1 - A project summary page, showing the project dataset summary and the client's requirements.
+1 - A project summary page, showing the project dataset summary and the client's requirements.
 
-* 2 - A page listing your findings related to a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew
+2 - A page listing your findings related to a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew
 
-* 3 - A page containing:
+3 - A page containing:
 
         - A link to download a set of cherry leaf images for live prediction (you may use the Kaggle repository that was provided to you).
 
@@ -106,9 +106,9 @@ differently than healthy Cherry leaves
 
         - A table with the image name and prediction results, and a download button to download the table.
 
-* 4 - A page indicating your project hypothesis and how you validated it across the project.
+4 - A page indicating your project hypothesis and how you validated it across the project.
 
-* 5 - A technical page displaying your model performance.
+5 - A technical page displaying your model performance.
 
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
 
@@ -119,7 +119,7 @@ differently than healthy Cherry leaves
 ## Unfixed Bugs
 ********************
 
-* As far as I am aware, there are no unfixe bugs. That is not to say that there is not any; its just that I am not aware of them.
+* As far as I am aware, there are no unfixed bugs. That is not to say that there is not any; its just that I am not aware of them.
 
 * There is a limitation to this app that I am aware of, that given the opportunity to improve the overall product for the customer in the future. I would like to link the dashboard with a means for the operator to use the devices camera for image capture and upload, rather than file upload.
 
@@ -168,13 +168,13 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 * [Numpy](https://numpy.org/) is used to handle and manipulate multi-dimensional arrays, including providing a wide set of mathematical functions to operate on those arrays.
 
-* [Matplotlib](https://matplotlib.org/) is used for data visualization including embedding plotts in Jupyter notebooks.
+* [Matplotlib](https://matplotlib.org/) is used for data visualization including embedding plots in Jupyter notebooks.
 
 * [Plotly](https://plotly.com/) is used for plotting data, functions, and to add animation to data visualization.
 
-* [Scikit-learn](https://scikit-learn.org/stable/) contains tools used for data processing, predictive analysis, specifially used in this case to train the machine learning models for classification.
+* [Scikit-learn](https://scikit-learn.org/stable/) contains tools used for data processing, predictive analysis, specifically used in this case to train the machine learning models for classification.
 
-* [Seaborn](https://seaborn.pydata.org/) is a high-level intetrface for statistical graphics and it offers numerous built-in themes for styling Matplot graphics.
+* [Seaborn](https://seaborn.pydata.org/) is a high-level interface for statistical graphics and it offers numerous built-in themes for styling Matplot graphics.
 
 * [Tensorflow](https://www.tensorflow.org/) is used to filter out corrupt images or missing data during image processing.
 
@@ -193,13 +193,15 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ********************
 
 
-- Assistance and support for this project came in two main groups: **content** and **data/images**. Below, youll find sitings for both groups and links to each source:
+- Assistance and support for this project came in two main groups: **content** and **data/images**. Below, you'll find siting’s for both groups and links to each source:
 
 
 ********************
 ### Content 
 
 * [Code Institute Malaria Walk Through Project](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/) was heavily used for instructional purposes, and guidance through the development of this project.
+
+*[Mildew Detection](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves) was forked to provide the base foundation of this project.
 
 * [Streamlit](https://docs.streamlit.io/library/api-reference/write-magic/st.write) documentation was used for assistance in the writting the app pages
 
@@ -210,6 +212,8 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 * [valerieoni/mildew-detection](https://github.com/valerieoni/mildew-detection) github repository was used for readme guidance and code reference. 
 
 * [HaimanotA/Instant-Mildew-Detector](https://github.com/HaimanotA/Instant-Mildew-Detector) github repository was used for code reference and readme guidance
+
+*[Wikipedia](https://en.wikipedia.org/wiki/Powdery_mildew#:~:text=Powdery%20mildew%20is%20a%20fungal,its%20symptoms%20are%20quite%20distinctive.) was used as the resource pertaining to the powdery mildew fungal infection that is at the heart of this project.
 
 * The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
 
