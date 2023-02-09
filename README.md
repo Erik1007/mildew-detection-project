@@ -201,7 +201,7 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 * [Code Institute Malaria Walk Through Project](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/) was heavily used for instructional purposes, and guidance through the development of this project.
 
-*[Mildew Detection](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves) was forked to provide the base foundation of this project.
+* [Mildew Detection](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves) was forked to provide the base foundation of this project.
 
 * [Streamlit](https://docs.streamlit.io/library/api-reference/write-magic/st.write) documentation was used for assistance in the writting the app pages
 
@@ -213,7 +213,7 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 * [HaimanotA/Instant-Mildew-Detector](https://github.com/HaimanotA/Instant-Mildew-Detector) github repository was used for code reference and readme guidance
 
-*[Wikipedia](https://en.wikipedia.org/wiki/Powdery_mildew#:~:text=Powdery%20mildew%20is%20a%20fungal,its%20symptoms%20are%20quite%20distinctive.) was used as the resource pertaining to the powdery mildew fungal infection that is at the heart of this project.
+* [Wikipedia](https://en.wikipedia.org/wiki/Powdery_mildew#:~:text=Powdery%20mildew%20is%20a%20fungal,its%20symptoms%20are%20quite%20distinctive.) was used as the resource pertaining to the powdery mildew fungal infection that is at the heart of this project.
 
 * The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
 
