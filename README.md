@@ -1,19 +1,21 @@
+********************
 # Mildew Detection in Cherry Leaves
 ********************
 
+
 ********************
 ## Table of Contents
-1. [Introduction](#Introduction)
-2. [Business Requirements](#Business-Requirements)
-3. [Hypothesis and Validation](#Hypothesis-and-Validation)
-4. [ML Task Rationale](#ML-Task-Rationale)
-5. [ML Business Case](#ML-Business-Case)
-6. [Dashboard Design](#Dashboard-Design)
-7. [Unfixed Bugs](#Unfixed-Bugs)
-8. [Deployment](#Deployment)
-9. [Data Analysis and Machine Learning Libraries](#Data-Analysis-and-Machine-Learning-Libraries)
-10. [Credits](#Credits)
-11. [Acknowledgements](#Acknowledgements)
+1.  [Introduction](#Introduction)
+2.  [Business Requirements](#Business-Requirements)
+3.  [Hypothesis and Validation](#Hypothesis-and-Validation)
+4.  [ML Task Rationale](#ML-Task-Rationale)
+5.  [ML Business Case](#ML-Business-Case)
+6.  [Dashboard Design](#Dashboard-Design)
+7.  [Unfixed Bugs](#Unfixed-Bugs)
+8.  [Deployment](#Deployment)
+9.  [Data Analysis and Machine Learning Libraries](#Data-Analysis-and-Machine-Learning-Libraries)
+10.  [Credits](#Credits)
+11.  [Acknowledgements](#Acknowledgements)
 ********************
 
 
@@ -23,8 +25,9 @@
 ## Introduction
 ********************
 
-
-This project is to facilitate the means to create a Data Analysis Machine Learning Tool that can accuratly determine if an upladed image of a Cherry Leafe contains a healthy Cherry Leaf or one infected with a powedery Mildew.
+A customer is in search of a more efficient way of determining if their crop (Cherry Leaves) has been infected with a powdery mildew fungi or if it healthy. Thier current method of crop inspection is to manually inspect leaves on every tree in thier plantation; which is both time consumming and expensive.  
+This project is to facilitate the means to create a Data Analysis Machine Learning Tool that can accuratly determine if an upladed image of a Cherry Leafe contains a healthy Cherry Leaf or one infected with a powedery Mildew. 
+The outcome goal of this project is to positivly impact the customers' profit margins by combining visual imagary with Machine Learning to save time, labor, resources and most of all, the health of the harvest. 
 
 
 
@@ -86,6 +89,7 @@ differently than healthy Cherry leaves
 * 5 - Conventional data analysis can be used to visually inspect and differentiate the images of the leaves to determine if the image contains a healthy leaf or one infected with powdery mildew.
 
 
+
 ********************
 ## Dashboard Design
 ********************
@@ -107,14 +111,18 @@ differently than healthy Cherry leaves
 * 5 - A technical page displaying your model performance.
 
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-* Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+
+
 
 
 ********************
 ## Unfixed Bugs
 ********************
 
-* You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+* As far as I am aware, there are no unfixe bugs. That is not to say that there is not any; its just that I am not aware of them.
+
+* There is a limitation to this app that I am aware of, that given the opportunity to improve the overall product for the customer in the future. I would like to link the dashboard with a means for the operator to use the devices camera for image capture and upload, rather than file upload.
+
 
 
 ********************
@@ -152,15 +160,33 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ## Data Analysis and Machine Learning Libraries
 ********************
 
-* Pandas is used for data analysis, especially for performing statstical analysis.
+* [Jupyter notebooks](https://jupyter.org/) was the main source used for running and executing the ML pipelines.
 
-* Numpy is used to handle multi-dimensional arrays,  including providing a wide set of mathematical functions to operate on these arrays.
+* [Streamlit](https://streamlit.io/) is used to host the interactive dashboard.
 
-* Matplotlib is used for data visualization including embedding plotts in Jupyter notebooks.
+* [Pandas](https://pandas.pydata.org/) is used for data analysis, especially for structuring the data.
 
-* Plotly is used for plotting data, functions, and to add animation to data visualization.
+* [Numpy](https://numpy.org/) is used to handle and manipulate multi-dimensional arrays, including providing a wide set of mathematical functions to operate on those arrays.
 
-* Scikit-learn contains tools used for predictive analysis, specifially used in this case to train the machine learning models for classification and clustetring.
+* [Matplotlib](https://matplotlib.org/) is used for data visualization including embedding plotts in Jupyter notebooks.
+
+* [Plotly](https://plotly.com/) is used for plotting data, functions, and to add animation to data visualization.
+
+* [Scikit-learn](https://scikit-learn.org/stable/) contains tools used for data processing, predictive analysis, specifially used in this case to train the machine learning models for classification.
+
+* [Seaborn](https://seaborn.pydata.org/) is a high-level intetrface for statistical graphics and it offers numerous built-in themes for styling Matplot graphics.
+
+* [Tensorflow](https://www.tensorflow.org/) is used to filter out corrupt images or missing data during image processing.
+
+* [Keras](https://keras.io/) was used for the CNN model for the ML pipeline.
+
+* [Joblib](https://joblib.readthedocs.io/en/latest/) was used for loading and saving the images shapes.
+
+* [Github](https://github.com/) is used for hosting the project and accepting all of the pushed code.
+
+* [Gitpod](https://github.com/) is the workspace that hosted all facets of the project.
+
+* [Heroku](https://heroku.com) was used for deployment of the project.
 
 ********************
 ## Credits 
@@ -168,6 +194,7 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 
 - Assistance and support for this project came in two main groups: **content** and **data/images**. Below, youll find sitings for both groups and links to each source:
+
 
 ********************
 ### Content 
@@ -185,6 +212,7 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 * [HaimanotA/Instant-Mildew-Detector](https://github.com/HaimanotA/Instant-Mildew-Detector) github repository was used for code reference and readme guidance
 
 * The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+
 
 ********************
 ### Dataset / Media
