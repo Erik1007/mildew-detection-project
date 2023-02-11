@@ -1,7 +1,7 @@
 import streamlit as st 
 
 
-def page_project_hypoothesis_body():
+def page_project_hypothesis_body():
 
     st.header("Mildew Detection in Cherry Leaves Hypothesis")
 
