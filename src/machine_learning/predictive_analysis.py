@@ -44,28 +44,27 @@ def make_prediction(my_image, version):
     return prediction_probability, predicted_class
 
 
-def plot_predictions_probabilities(pred_proba, pred_class):
-    """
-    Plot prediction probability results
-    """
+def plot_prediction_probabilities(prediction_prob, prediction_class):
+    '''
+    plot prediction probability result
+    '''
+    probability_per_class = pd.DataFrame(
+        data=[0, 0],
+        index={'healthy': 0, 'powdery_mildew': 1}.keys(),
+        columns=['Probability']
+    )
+    probability_per_class.loc[prediction_class] = prediction_prob
+    for x in probability_per_class.index.to_list():
+        if x not in prediction_class:
+            probability_per_class.loc[x] = 1 - prediction_prob
+    probability_per_class = probability_per_class.round(3)
+    probability_per_class['Diagnostic'] = probability_per_class.index
 
-    prob_per_class= pd.DataFrame(
-            data=[0,0],
-            index={'healthy': 0, 'powdery_mildew': 1}.keys(),
-            columns=['Probability']
-        )
-    prob_per_class.loc[pred_class] = pred_proba
-    for x in prob_per_class.index.to_list():
-        if x not in pred_class: prob_per_class.loc[x] = 1 - pred_proba
-    prob_per_class = prob_per_class.round(3)
-    prob_per_class['Diagnostic'] = prob_per_class.index
-    
     fig = px.bar(
-            prob_per_class,
-            x = 'Diagnostic',
-            y = prob_per_class['Probability'],
-            range_y=[0,1],
-            width=600, height=300,template='seaborn')
+        probability_per_class,
+        x='Diagnostic',
+        y=probability_per_class['Probability'],
+        range_y=[0, 1],
+        width=600, height=300, template='seaborn')
     st.plotly_chart(fig)
-
 
