@@ -7,15 +7,41 @@ from PIL import Image
 from src.data_management import load_pkl_file
 
 
-def resize_input_image(img, version):  
+def resize_input_image(img, version):
     """
-    Reshape image to average image size
+    Resize image to average image size
     """
-    image_shape = load_pkl_file(file_path=f"outputs/{version}/image_shape.pkl")
+    image_shape = load_pickle_file(
+        file_name=f"outputs/{version}/image_shape.pk1")
     img_resized = img.resize((image_shape[1], image_shape[0]), Image.ANTIALIAS)
-    my_image = np.expand_dims(img_resized, axis=0)/255
+    return np.expand_dims(img_resized, axis=0)/255
 
-    return my_image
+
+def make_prediction(my_image, version):
+    """
+    Load and perform ML prediction over images provided
+    """
+
+    model = load_model(f'outputs/{version}/mildew_detector_model.h5')
+    prediction_probability = model.predict(my_image)[0, 0]
+    predictions_labels = {'healthy': 0, 'powdery_mildew': 1}
+
+    target_map = {v: k for k, v in predictions_labels.items()}
+    predicted_class = target_map[prediction_probability > 0.5]
+
+    if predicted_class == target_map[0]:
+        prediction_probability = 1 - prediction_probability
+
+    statement = "Based on predictive analysis, the cherry leaf indicates "
+
+    if predicted_class.lower() == 'healthy':
+        statement = f"{statement} as **{predicted_class.lower()}**"
+    else:
+        statement = f"{statement} as infected with **powdery mildew**."
+  
+    st.write(statement)
+        
+    return prediction_probability, predicted_class
 
 
 def plot_predictions_probabilities(pred_proba, pred_class):
@@ -25,7 +51,7 @@ def plot_predictions_probabilities(pred_proba, pred_class):
 
     prob_per_class= pd.DataFrame(
             data=[0,0],
-            index={'Parasitized': 0, 'Uninfected': 1}.keys(),
+            index={'healthy': 0, 'powdery_mildew': 1}.keys(),
             columns=['Probability']
         )
     prob_per_class.loc[pred_class] = pred_proba
@@ -43,22 +69,3 @@ def plot_predictions_probabilities(pred_proba, pred_class):
     st.plotly_chart(fig)
 
 
-def load_model_and_predict(my_image, version):
-    """
-    Load and perform ML prediction over live images
-    """
-
-    model = load_model(f"outputs/{version}/malaria_detector_model.h5")
-
-    pred_proba = model.predict(my_image)[0,0]
-
-    target_map = {v: k for k, v in {'Parasitized': 0, 'Uninfected': 1}.items()}
-    pred_class =  target_map[pred_proba > 0.5]  
-    if pred_class == target_map[0]: pred_proba = 1 - pred_proba
-
-
-    st.write(
-        f"The predictive analysis indicates the sample cell is "
-        f"**{pred_class.lower()}** with malaria.")
-    
-    return pred_proba, pred_class
