@@ -5,6 +5,11 @@ import base64
 from datetime import datetime
 import joblib
 
+
+def load_pkl_file(file_path):
+    return joblib.load(filename=file_path)
+
+    
 def download_dataframe_as_csv(df):
 
     datetime_now = datetime.now().strftime("%d%b%Y_%Hh%Mmin%Ss")
@@ -17,5 +22,3 @@ def download_dataframe_as_csv(df):
     return href
 
 
-def load_pkl_file(file_path):
-    return joblib.load(filename=file_path)
