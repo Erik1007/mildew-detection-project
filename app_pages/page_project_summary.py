@@ -21,7 +21,7 @@ def page_project_summary_body():
         f"preventing the infection from causing further damage.\n\n"
     )
 
-    if st.checkbox("### Problem Statement:"):
+    if st.checkbox("Problem Statement:"):
         st.info(
             f"Farmy and Foods agricultural plantation has recently discovered Powdery Mildew infecitons in some of "
             f"their Cherry Trees. The Cherry Leaves production is one of their largest portfolio assets and there "
