@@ -23,7 +23,7 @@ def page_leaves_visualizer_body():
         avg_healthy = plt.imread(f"{output_dir}/avg_var_healthy.png")
         avg_mildew = plt.imread(f"{output_dir}/avg_var_powdery_mildew.png")
 
-    st.warning(
+    st.success(
         f"Upon inspection, a significant visual difference in consistent coloring is present: "
         f"a **healthy** leaf presents more greenish uniform coloring.\n"
         f"where as an infected leaf presents a fuzzy white surface, inconsistent color patterns and white blotches.\n"
@@ -33,7 +33,7 @@ def page_leaves_visualizer_body():
     st.image(avg_mildew, caption="Cherry Leaf infected with powdery mildew - Average and Variability")
     st.write("---")
 
-    if st.checkbox("Differences between a Healthy and in Infected Cherry Leaf"):
+    if st.checkbox("Differences between a Healthy and an Infected Cherry Leaf"):
         diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
         st.warning(

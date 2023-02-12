@@ -31,7 +31,7 @@ def page_mildew_detector_body():
 
 def upload_and_predict(images_buffer):
     if images_buffer is not None:
-        df_report = pd.DataFrame([])
+        report = pd.DataFrame([])
         for image in images_buffer:
 
             img_pil = (Image.open(image))
@@ -41,15 +41,16 @@ def upload_and_predict(images_buffer):
 
             version = 'v1'
             resized_img = resize_input_image(img=img_pil, version=version)
-            pred_proba, pred_class = load_model_and_predict(resized_img, version=version)
-            plot_predictions_probabilities(pred_proba, pred_class)
+            prediction_prob, prediction_class = make_prediction(
+                resized_img, version=version)
+            plot_prediction_probabilities(prediction_prob, prediction_class)
 
-            df_report = df_report.append({"Name":image.name, 'Result': pred_class },
-                                        ignore_index=True)
+            report = report.append({"Name": image.name, 'Result': prediction_class},
+                                ignore_index=True)
         
-        if not df_report.empty:
+        if not report.empty:
             st.success("Analysis Report")
-            st.table(df_report)
-            st.markdown(download_dataframe_as_csv(df_report), unsafe_allow_html=True)
+            st.table(report)
+            st.markdown(download_dataframe_as_csv(report), unsafe_allow_html=True)
 
         

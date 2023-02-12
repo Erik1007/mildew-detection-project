@@ -8,10 +8,11 @@ def page_project_summary_body():
     st.header("General Information: ")
     st.info(
         f"Cherry Leaves are an intergral ingrediant found in numerous products world wide, making them a big business "
-        f"Depending on how they are used, the Cherry Leaves can be found in anything from Tea, to skin care products; as "
-        f" well as over the counter vitamens and even used medicanally to help boost testosterone and clense the liver "
-        f"However, as a naturally growing product, Cherry Trees and the leaves are subject to fungal infections, such as "
-        f"Powdery Mildew. According to [Wikipwedia](https://en.wikipedia.org/wiki/Powdery_mildew), the ascomycete fungi "
+        f"depending on how they are used. Cherry Leaves can be found in anything from Tea, to skin care products; as "
+        f"well as over the counter vitamins and they are even used to help boost testosterone and clense the liver "
+        f"However, as a naturally biological product, Cherry Trees and the leaves are subject to fungal infections, such as "
+        f"Powdery Mildew.\n\n" 
+        f"According to [Wikipedia](https://en.wikipedia.org/wiki/Powdery_mildew), the ascomycete fungi "
         f"attacks and infects the lower leaves in more humid climates with devestating effects on the life of the  "
         f"host plant reducing plant harvest and other future harm. Healthy tree cellss are darker in color as that aids "
         f"the photosyntheis process of trapping light; the powdery mildew leaves change the pigment of the tree leaf cells, "
@@ -34,11 +35,11 @@ def page_project_summary_body():
             f"4208 images of healthy and infected cherry leaves and was used as the source to train the ML app.\n\n"
         )
 
-    st.info(
-        f"A visual comparrison machine learning (ML) tool will enable employees through out the company's vast properties "
-        f"to quickly upload images fo Cherry Tree leaves to determin fi they are infectoed or not. This ML tool "
+    st.write(
+        f"A visual comparrison machine learning (ML) tool will enable employees throughout the company's vast properties "
+        f"to quickly upload images fo Cherry Tree leaves to determin if they are infected or not. This ML tool "
         f"will be at least 97% accurate and significantly faster than the previous manual procedure. This ML tool will "
-        f"save the company time, money, resources and labor; thus positivly impacting the financial outcome.\n\n"
+        f"save the company time, money, resources and labor; thus positivly impacting the financial outcome of the harvest.\n\n"
     )
 
     st.header("Business Requirements: ")
@@ -52,6 +53,7 @@ def page_project_summary_body():
 
     if st.checkbox("Requirement 2:"):
         st.info(
-            f"Deliver an ML system that is capable of predicting whether a cherry leaf is healthy or contains powdery mildew."
+            f"Deliver an ML system that is capable of predicting whether a cherry leaf is healthy or contains "
+            f"powdery mildew based upon uploaded image comparrison to the learned AI app."
         )
 

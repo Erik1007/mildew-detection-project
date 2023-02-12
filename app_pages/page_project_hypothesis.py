@@ -20,7 +20,8 @@ def page_project_hypothesis_body():
 
     st.success(
         f"Images of healthy leaves will present darker green colors, while infected leaves will present lighter "
-        f"colors, white streaks, white blotches and white fuzzy surfaces.\n"
+        f"colors, white streaks, white blotches and white fuzzy surfaces.\n\n"
         f"The ML image validator app will differentiate between a healthy Cherry Leaf and an infected leaf.\n"
-        f"The ML image validator app will prove to be at least 97% accurate in the training, and validating trials."
+        f"The ML image validator app will prove to be at least 97% accurate in the training, and validating trials.\n\n"
+        f"Select the Cherry Leaf Visualizer page in the sidebar for an image montage of healthy and infected leaves."
     )
