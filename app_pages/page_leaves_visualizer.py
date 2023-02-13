@@ -12,7 +12,7 @@ import random
 def page_leaves_visualizer_body():
     st.title("Powdery Mildew Detection in Cherry Leaves")
     st.info(
-        f"This page will show the difference between a **healthy** Cherry Leaf "
+        f"This page will provide a visual reference of the difference between a **healthy** Cherry Leaf "
         f"and a Cherry Leaf infected with **powdery mildew**.\n\n"
     )
 
@@ -20,8 +20,8 @@ def page_leaves_visualizer_body():
     output_dir = f"outputs/{version}"
 
     if st.checkbox("Difference between average and variability image"):
-        avg_healthy = plt.imread(f"{output_dir}/avg_var_healthy.png")
-        avg_mildew = plt.imread(f"{output_dir}/avg_var_powdery_mildew.png")
+        avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
+        avg_mildew = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
 
     st.success(
         f"Upon inspection, a significant visual difference in consistent coloring is present: "
