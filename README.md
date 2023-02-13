@@ -10,12 +10,13 @@
 3.  [Hypothesis and Validation](#Hypothesis-and-Validation)
 4.  [ML Task Rationale](#ML-Task-Rationale)
 5.  [ML Business Case](#ML-Business-Case)
-6.  [Dashboard Design](#Dashboard-Design)
-7.  [Unfixed Bugs](#Unfixed-Bugs)
-8.  [Deployment](#Deployment)
-9.  [Data Analysis and Machine Learning Libraries](#Data-Analysis-and-Machine-Learning-Libraries)
-10.  [Credits](#Credits)
-11.  [Acknowledgements](#Acknowledgements)
+6.  [Jupyter Notebook Proces](#jupyter-process)
+7.  [Dashboard Design](#Dashboard-Design)
+8.  [Unfixed Bugs](#Unfixed-Bugs)
+9.  [Deployment](#Deployment)
+10.  [Data Analysis and Machine Learning Libraries](#Data-Analysis-and-Machine-Learning-Libraries)
+11.  [Credits](#Credits)
+12.  [Acknowledgements](#Acknowledgements)
 ********************
 
 
@@ -25,7 +26,7 @@
 ## Introduction
 ********************
 
-A customer is in search of a more efficient way of determining if their crop (Cherry Leaves) has been infected with a powdery mildew fungus or if it is healthy. Their current method of crop analysis is to manually inspect the leaves on every tree in their plantation, which is both time consuming and resource expensive.  
+The customer is in search of a more efficient way of determining if their crop (Cherry Leaves) has been infected with a powdery mildew fungus or if it is healthy. Their current method of crop analysis is to manually inspect the leaves on every tree in their plantation, which is both time consuming and resource expensive.  
 This project is to facilitate the means to create a Predictive Analysis Machine Learning Tool that can accurately and quickly determine if an uploaded image of a Cherry Leaf contains a healthy Cherry Leaf or one infected with a powdery Mildew. 
 The outcome goal of this project is to positively impact the customers' profit margins by combining visual imagery with Machine Learning to save time, labour, resources and most of all, the health of the harvest. 
 
@@ -44,7 +45,9 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
+3 - That the app is repsonsive to fit appropraitly on all devices:
 
+![Screenshot of the resonsive website](/assets/images/responsive.jpg)
 
 
 ********************
@@ -89,26 +92,55 @@ differently than healthy Cherry leaves
 5 - Conventional data analysis can be used to visually inspect and differentiate the images of the leaves to determine if the image contains a healthy leaf or one infected with powdery mildew.
 
 
+********************
+## Jupyter Process
+********************
+
+1. Dataset content came from [Kaggle Cheery Leaves Dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) which contains 4208 images of Cherry Leaves, equally divided between healthy and infected. The data was organized into **Healthy** and **Powdery Mildew** folders in the workspace
+
+2. The data was then cleaned to remove any corrupt or non image files. Once cleaned it was split (using the standard train/test/validate method) into the three aformentioned grouping using the ratio of .7, .2, .1 respectivly. As the groups were on the smaller size, the next step of the process was to augment all three groups to increase the amount of images to be used in the modelling process. The augmentation process uses the existing images and artifically randomly alters and saves them with small alterations such as image rotation, opacity, image placement, and rescaling to create a more robust data source.
+
+3. The modelling process
 
 ********************
-## Dashboard Design
+## Dashboard Design and features
 ********************
 
-1 - A project summary page, showing the project dataset summary and the client's requirements.
+1 - The project summary page, provides critical information concerning the backstory and source of the projects origins and subsequesnt information concerning the customer. Also on the summary page the business requirements chosen by the customer which extrapolate what a successful project will provide.
 
-2 - A page listing your findings related to a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew
+![Screenshot of the summary page](/assets/images/summary_1.jpg)
+![Screenshot of the summary page](/assets/images/summary_2.jpg)
+![Screenshot of the summary page](/assets/images/summary_3.jpg)
 
-3 - A page containing:
+********************
+2 - The Hypothesis page displays the 4 main objectives and outcome goals for the project, including measures of success.
 
-        - A link to download a set of cherry leaf images for live prediction (you may use the Kaggle repository that was provided to you).
+![Screenshot of the Hypthesis page](/assets/images/hypo_1.jpg)
+
+********************
+3 -The Cherry Leaf Visualizer page which visually differentiates image models between healthy cherry leaves from those that contains powdery mildew.
+
+
+![Screenshot of the Cherry Leaf Visualizer page](/assets/images/visual_1.jpg)
+
+********************
+4 - The Detector page is arguable the most important page in the dashboard, as it is the page that allows for the customer to interact with the ML app by uploading images and haveing the app predict if the leaf is infected or not. This page contains:
+
+        - A link to download a set of cherry leaf images for live prediction 
 
         - A User Interface with a file uploader widget. The user should have the capacity to upload multiple images. For each image, it will display the image and a prediction statement, indicating if a cherry leaf is healthy or contains powdery mildew and the probability associated with this statement.
 
         - A table with the image name and prediction results, and a download button to download the table.
 
-4 - A page indicating your project hypothesis and how you validated it across the project.
+![Screenshot of the Detector page](/assets/images/detector_1.jpg)
+![Screenshot of the Detector page](/assets/images/detector_2.jpg)
+![Screenshot of the Detector page](/assets/images/detector_3.jpg)
 
-5 - A technical page displaying your model performance.
+********************
+5 - The Metrics page displays the technical aspects of the model performance.
+
+![Screenshot of the Metrics page](/assets/images/meteric_1.jpg)
+![Screenshot of the Detector page](/assets/images/meteric_2.jpg)
 
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
 
@@ -121,7 +153,20 @@ differently than healthy Cherry leaves
 
 * As far as I am aware, there are no unfixed bugs. That is not to say that there is not any; its just that I am not aware of them.
 
+
+* 
+
+
+********************
+## Future Improvements
+********************
+
+
 * There is a limitation to this app that I am aware of, that given the opportunity to improve the overall product for the customer in the future. I would like to link the dashboard with a means for the operator to use the devices camera for image capture and upload, rather than file upload.
+
+
+* A second large improvement for this app would be a GPS pinpoint for positive hits on infected trees. 
+And combining the Geo-Locations with weather patterns to possibly create infectious spread patterns based on wind vectors to create predictive zones for anti-fungal compound dispersal in the different orchards to contain the spread of infection. 
 
 
 
