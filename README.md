@@ -96,35 +96,39 @@ differently than healthy Cherry leaves
 ## Jupyter Process
 ********************
 
-1. Dataset content came from [Kaggle Cheery Leaves Dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) which contains 4208 images of Cherry Leaves, equally divided between healthy and infected. The data was organized into **Healthy** and **Powdery Mildew** folders in the workspace
+1. The dataset content came from [Kaggle Cheery Leaves Dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) which contains 4208 images of Cherry Leaves, equally divided between healthy and infected. The data was organized into **Healthy** and **Powdery Mildew** folders in the workspace
 
 2. The data was then cleaned to remove any corrupt or non image files. Once cleaned it was split (using the standard train/test/validate method) into the three aformentioned grouping using the ratio of .7, .2, .1 respectivly. As the groups were on the smaller size, the next step of the process was to augment all three groups to increase the amount of images to be used in the modelling process. The augmentation process uses the existing images and artifically randomly alters and saves them with small alterations such as image rotation, opacity, image placement, and rescaling to create a more robust data source.
 
-3. The modelling process
+3. The modelling process is set of steps to train a ML pipeline to be able to make a prediction on unseen data based off of information (visual) used to train specific details of grouped images. 
+A sequential modal was used to create all three groups of this pipelne so that it can accurately predict unseen images.
+
+4. Evaluation and accuracy testing are the final steps in the pipeline development. This pipeline was tested and scored over 97% accurate which meets the needs of the customer.
+
 
 ********************
 ## Dashboard Design and features
 ********************
 
-1 - The project summary page, provides critical information concerning the backstory and source of the projects origins and subsequesnt information concerning the customer. Also on the summary page the business requirements chosen by the customer which extrapolate what a successful project will provide.
+1 - The **Project Summary page**, provides critical information concerning the backstory and source of the projects origins and subsequesnt information concerning the customer. Also on the summary page the business requirements chosen by the customer which extrapolate what a successful project will provide.
 
 ![Screenshot of the summary page](/assets/images/summary_1.jpg)
 ![Screenshot of the summary page](/assets/images/summary_2.jpg)
 ![Screenshot of the summary page](/assets/images/summary_3.jpg)
 
 ********************
-2 - The Hypothesis page displays the 4 main objectives and outcome goals for the project, including measures of success.
+2 - The **Hypothesis page** displays the 4 main objectives and outcome goals for the project, including measures of success.
 
 ![Screenshot of the Hypthesis page](/assets/images/hypo_1.jpg)
 
 ********************
-3 -The Cherry Leaf Visualizer page which visually differentiates image models between healthy cherry leaves from those that contains powdery mildew.
+3 -The **Cherry Leaf Visualizer page** which visually differentiates image models between healthy cherry leaves from those that contains powdery mildew.
 
 
 ![Screenshot of the Cherry Leaf Visualizer page](/assets/images/visual_1.jpg)
 
 ********************
-4 - The Detector page is arguable the most important page in the dashboard, as it is the page that allows for the customer to interact with the ML app by uploading images and haveing the app predict if the leaf is infected or not. This page contains:
+4 - The **Detector page** is arguable the most important page in the dashboard, as it is the page that allows for the customer to interact with the ML app by uploading images and haveing the app predict if the leaf is infected or not. This page contains:
 
         - A link to download a set of cherry leaf images for live prediction 
 
@@ -137,7 +141,7 @@ differently than healthy Cherry leaves
 ![Screenshot of the Detector page](/assets/images/detector_3.jpg)
 
 ********************
-5 - The Metrics page displays the technical aspects of the model performance.
+5 - The **Metrics** page displays the technical aspects of the model performance.
 
 ![Screenshot of the Metrics page](/assets/images/meteric_1.jpg)
 ![Screenshot of the Detector page](/assets/images/meteric_2.jpg)
