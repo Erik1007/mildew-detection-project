@@ -22,6 +22,9 @@ def page_leaves_visualizer_body():
     if st.checkbox("Difference between average and variability image"):
         avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
         avg_mildew = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
+        st.image(avg_healthy, caption="Healthy Cherry Leaf - Average and Variability")
+        st.image(avg_mildew, caption="Cherry Leaf infected with powdery mildew - Average and Variability")
+        st.write("---")
 
     st.success(
         f"Upon inspection, a significant visual difference in consistent coloring is present: "
@@ -29,9 +32,6 @@ def page_leaves_visualizer_body():
         f"where as an infected leaf presents a fuzzy white surface, inconsistent color patterns and white blotches.\n"
     )
 
-    st.image(avg_healthy, caption="Healthy Cherry Leaf - Average and Variability")
-    st.image(avg_mildew, caption="Cherry Leaf infected with powdery mildew - Average and Variability")
-    st.write("---")
 
     if st.checkbox("Differences between a Healthy and an Infected Cherry Leaf"):
         diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
@@ -43,15 +43,15 @@ def page_leaves_visualizer_body():
             f"infected images show a lighter more blotchy leaf.\n\n"
         )
 
-        st.image(avg_diff, caption='Difference between average images')
+        st.image(diff_between_avgs, caption='Difference between average images')
 
         if st.checkbox("Image Montage"):
             st.write("* To create and refresh the montage, click on 'Create Montage' button")
-            data_dir = 'inputs/datasets/raw/cherry-leaves/validation'
-            labels = os.listdir(data_dir)
+            data_dir = 'inputs/cherry_leaves_dataset/cherry-leaves'
+            labels = os.listdir(data_dir+ '/validation')
             label_to_display = st.selectbox(label="Select label", options=labels, index=0)
             if st.button("Create Montage"):      
-                image_montage(dir_path= my_data_dir + '/validation',
+                image_montage(dir_path= data_dir + '/validation',
                       label_to_display=label_to_display,
                       nrows=8, ncols=3, figsize=(10,25))
             st.write("---")    
@@ -64,7 +64,7 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
 
         image_list = os.listdir(dir_path+'/'+ label_to_display)
         if nrows * ncols < len(image_list):
-            img_idx = random.sample(images_list, nrows * ncols)
+            img_idx = random.sample(image_list, nrows * ncols)
         else:
             print(
                 f"Lower nrows or ncols to create your montage. \n"

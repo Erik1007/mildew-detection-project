@@ -173,6 +173,24 @@ A sequential modal was used to create all three groups of this pipelne so that i
 And combining the Geo-Locations with weather patterns to possibly create infectious spread patterns based on wind vectors to create predictive zones for anti-fungal compound dispersal in the different orchards to contain the spread of infection. 
 
 
+********************
+Conclusions
+********************
+
+* what have I learned?
+
+* Verification proces
+
+* What did I get out of the process?
+
+* CRISP DM
+
+* Hypothesis acheivements
+
+* Explanations of the visulaizations
+
+* -> Add in doc strings in the jupyter notebook
+
 
 ********************
 ## Deployment
