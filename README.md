@@ -125,7 +125,10 @@ A sequential modal was used to create all three groups of this pipelne so that i
 3 -The **Cherry Leaf Visualizer page** which visually differentiates image models between healthy cherry leaves from those that contains powdery mildew.
 
 
-![Screenshot of the Cherry Leaf Visualizer page](/assets/images/visual_1.jpg)
+![Screenshot of the Cherry Leaf Visualizer page](/assets/images/Visual_1.jpg)
+![Screenshot of the Cherry Leaf Visualizer page](/assets/images/Visual_2.jpg)
+![Screenshot of the Cherry Leaf Visualizer page](/assets/images/Visual_3.jpg)
+![Screenshot of the Cherry Leaf Visualizer page](/assets/images/Visual_4.jpg)
 
 ********************
 4 - The **Detector page** is arguable the most important page in the dashboard, as it is the page that allows for the customer to interact with the ML app by uploading images and haveing the app predict if the leaf is infected or not. This page contains:
