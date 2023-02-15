@@ -27,9 +27,9 @@ def page_leaves_visualizer_body():
         st.write("---")
 
     st.success(
-        f"Upon inspection, a significant visual difference in consistent coloring is present: "
+        f"Upon inspection, a significant visual difference in consistent colouring is present: "
         f"a healthy leaf presents more greenish uniform coloring.\n"
-        f"where as an infected leaf presents a fuzzy white surface, inconsistent color patterns and white blotches.\n"
+        f"where as an infected leaf presents a fuzzy white surface, inconsistent colour patterns and white blotches.\n"
     )
 
 
@@ -37,8 +37,8 @@ def page_leaves_visualizer_body():
         diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
         st.warning(
-            f"The comparrison image between the two averages is the dark image "
-            f"in the folowing checkbox, a further montage of both the healthy and infected leaves will be shown.\n "
+            f"The comparison image between the two averages is the dark image "
+            f"in the following checkbox, a further montage of both the healthy and infected leaves will be shown.\n "
             f"These average images do show similarities for each grouping: the healthy images are greener and the "
             f"infected images show a lighter more blotchy leaf.\n\n"
         )

@@ -21,7 +21,7 @@ def page_ml_performance_body():
 
     st.header("Model History")
     st.info(
-        f"The graph below provide a visual representaiton of the learning cycle for the ML model used for this"
+        f"The graph below provide a visual representation of the learning cycle for the ML model used for this"
         f"project. The two graphs show the accuracy and loss plots as a result of the training process.\n\n"
         f"These two graphs provide visual proof of a normal learning curve of the ML pipeline as both graphs "
         f"show a similar path and are close to each other. These graphs prove that the model is neither overfitting "
@@ -31,10 +31,10 @@ def page_ml_performance_body():
     col1, col2 = st.beta_columns(2)
     with col1: 
         model_acc = plt.imread(f"outputs/{version}/model_training_acc.png")
-        st.image(model_acc, caption='Model Traninig Accuracy')
+        st.image(model_acc, caption='Model Training Accuracy')
     with col2:
         model_loss = plt.imread(f"outputs/{version}/model_training_losses.png")
-        st.image(model_loss, caption='Model Traninig Losses')
+        st.image(model_loss, caption='Model Training Losses')
     st.write("---")
 
 

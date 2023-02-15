@@ -11,14 +11,14 @@ def page_conclusions_body():
             f"* 1 - Cherry Leaves infected with powdery mildew have white blotches, white streaks and fuzzy white surface  "
             f"making them appear significantly different than healthy Cherry leaves.\n\n"
             f"Proven Correct, the appearance of cherry leaves infected with powdery mildew are white in color and " 
-            f"present as significanly different than a healthy cherry leaf. "
+            f"present as significantly different than a healthy cherry leaf. "
         )
 
     if st.checkbox("Hypothesis 2: "):
         st.write(
             f"* 2 - The ML image visualizer app will be able to differentiate between a healthy cherry leaf and an "
             f"infected cherry leaf with at least 97% accuracy.\n\n"
-            f"Proven Correct, the ML Image Visualizer AI App was able to be trained to accuratly predict "
+            f"Proven Correct, the ML Image Visualizer AI App was able to be trained to accurately predict "
             f"with greater than 97% accuracy, what the health status is of an unseen image of a cherry leaf"
         )
 
@@ -28,12 +28,12 @@ def page_conclusions_body():
             f"the images thereby saving the employee and company both time and money during the inspection process.\n\n"
             f"Assumed Correct, until the app is put into the hands of the laborers in the feild, this hypothesis can only be "
             f"assumed to be correct. However, based on the present information and the time the app takes to predict "
-            f"unseen images, it is a safe assumtion that this hypothesis will be proven correct."
+            f"unseen images, it is a safe assumption that this hypothesis will be proven correct."
         )
 
     if st.checkbox("Hypothesis 4: "):
         st.write(
-            f"* 4 - Validation of the image visualizer app will come from the the ML pipline performance of the validation "
+            f"* 4 - Validation of the image visualizer app will come from the the ML pipeline performance of the validation "
             f"and test set differentiating between an infected leaf and and a healthy leaf with at least 97% accuracy.\n\n"
             f"Proven Correct, the ML pipeline used for this project had an accuracy greater than 97% for all three training sets."
         )
@@ -55,7 +55,7 @@ def page_conclusions_body():
     if st.checkbox("Business Requirement 2:"):
         st.success(
             f"Deliver an ML system that is capable of predicting whether a cherry leaf is healthy or contains "
-            f"powdery mildew based upon uploaded image comparrison to the learned AI app.\n\n"
+            f"powdery mildew based upon uploaded image comparison to the learned AI app.\n\n"
 
             f"Completed!"
         )
