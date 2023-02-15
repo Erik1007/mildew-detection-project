@@ -144,13 +144,16 @@ A sequential modal was used to create all three groups of this pipelne so that i
 ![Screenshot of the Detector page](/assets/images/detector_3.jpg)
 
 ********************
-5 - The **Metrics** page displays the technical aspects of the model performance.
+5 - The **Metrics** page displays the technical aspects of the model performance. The bar graph shows the breakdown of the amount of images, per label, contained in the train, validate and test groupings. The line graphs prove a normal learning curve through accuracy and loss plots and the last table shows the same information in a table graph. This ML model as normal and accurate to 99%.
 
 ![Screenshot of the Metrics page](/assets/images/meteric_1.jpg)
-![Screenshot of the Detector page](/assets/images/meteric_2.jpg)
+![Screenshot of the Metrics page](/assets/images/meteric_2.jpg)
 
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
 
+********************
+6 - The **Conclusions** page provides explainations and outcomes of the hypothesis and business requirements for the project.
+
+![Screenshot of the Conclusions Page](/assets/images/conclusions_1.jpg)
 
 
 
@@ -174,19 +177,6 @@ A sequential modal was used to create all three groups of this pipelne so that i
 
 * A second large improvement for this app would be a GPS pinpoint for positive hits on infected trees. 
 And combining the Geo-Locations with weather patterns to possibly create infectious spread patterns based on wind vectors to create predictive zones for anti-fungal compound dispersal in the different orchards to contain the spread of infection. 
-
-
-********************
-Conclusions
-********************
-
-* what have I learned?
-
-* What did I get out of the process?
-
-* CRISP DM
-
-* Explanations of the visulaizations
 
 
 ********************
@@ -256,9 +246,7 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ## Credits 
 ********************
 
-
 - Assistance and support for this project came in two main groups: **content** and **data/images**. Below, you'll find siting’s for both groups and links to each source:
-
 
 ********************
 ### Content 
@@ -294,3 +282,33 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ********************
 ## Acknowledgements
 * I would like to thank my mentor **Marcel Mulders** for his time, help, expertise and especially for his motivation during the creation and execution of this project.
+********************
+
+********************
+## Personal Conclusions
+********************
+
+### What have I learned from this project?
+
+- The CRISP-DM method for data mining and AI development is a fantastic guide for maintaining perspective on connecting the business goals of the project with the steps of data collection, preperation, modelling and understanding. The model was repeatedly referenced throughout the duration of this project as a means to connect the hypothesis and model to the requireemnts of the stakeholders.
+
+![CRISP-DM overview](/assets/images/crisp-dm.jpg)
+
+- I learned that jupyter notebooks and python are very user friendly even when dealing with complex situations such as developing and visual image ML pipeline model. 
+
+- Streamlit is also very user friendly for displaying information and connecting the notebooks outputs and model information to the stakeholder in a conveinent way. 
+
+### What did I gain from this process?
+
+- I personally gained alot of confidence in many area's involved in this path of development. I personally have more confidence in python coding as well as the ability to use python in more diverse ways. 
+
+- I also have gained a significant understanding for preditive analysis, data analysis and machine learning processes. The two walk through projects appropriatly framed the extensive lessons that make up the predictive analysis path; however, it was the execution of the project that truly connected the information with the process of understanding a problem, breaking it down in managable steps and completing the outcome goals.
+
+- Connecting previous lessons from the Fullstack Development path created a strong foundation and level of confidence that allowed for the predicitve analysis path to be less daunting and more manageable. 
+
+- The utilization of Agile combined with CRISP-DM created a straightforward step by step method to identify small hurdles and steps to accomplish in order to efficiently move throuhgh the whole project smoothly and successfully compelte the outcome goals.
+
+- The largest realization came from being able to rely upon my previous educational background of Research Psychology and Statistics with the combined support of the CRISP-DM process to more confidently approach predictive analysis.   
+
+
+* Explanations of the visulaizations
