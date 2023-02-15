@@ -182,17 +182,11 @@ Conclusions
 
 * what have I learned?
 
-* Verification proces
-
 * What did I get out of the process?
 
 * CRISP DM
 
-* Hypothesis acheivements
-
 * Explanations of the visulaizations
-
-* -> Add in doc strings in the jupyter notebook
 
 
 ********************
