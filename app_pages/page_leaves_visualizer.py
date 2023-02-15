@@ -28,7 +28,7 @@ def page_leaves_visualizer_body():
 
     st.success(
         f"Upon inspection, a significant visual difference in consistent coloring is present: "
-        f"a **healthy** leaf presents more greenish uniform coloring.\n"
+        f"a healthy leaf presents more greenish uniform coloring.\n"
         f"where as an infected leaf presents a fuzzy white surface, inconsistent color patterns and white blotches.\n"
     )
 

@@ -17,6 +17,7 @@
 10.  [Data Analysis and Machine Learning Libraries](#Data-Analysis-and-Machine-Learning-Libraries)
 11.  [Credits](#Credits)
 12.  [Acknowledgements](#Acknowledgements)
+13.  [Personal Conclusions](#Personal-Conclusions)
 ********************
 
 
@@ -45,13 +46,13 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
-3 - That the app is repsonsive to fit appropraitly on all devices:
+3 - That the app is responsive to fit appropriately on all devices:
 
-![Screenshot of the resonsive website](/assets/images/responsive.jpg)
+![Screenshot of the responsive website](/assets/images/responsive.jpg)
 
 
 ********************
-## Hypothesis and Validation
+## Hypothesis
 ********************
 
 1 - Cherry Leaves infected with powdery mildew have white blotches, streaks and surface making them appear
@@ -61,12 +62,12 @@ differently than healthy Cherry leaves
 
 3 - The ML image visualizer can help decrease the amount of time needed to differentiate between the images thereby saving the employee and company both time and money during the inspection process.
 
-4 - Validation of the image visualizer will come from the ML pipeline performance of the validation and test set differentiating between an infected leaf and and a healthy leaf with at least 97% accuracy.
+4 - Validation of the image visualizer will come from the ML pipeline performance of the validation and test set differentiating between an infected leaf and a healthy leaf with at least 97% accuracy.
 
 
 
 ********************
-## ML Task Rationale
+## ML Task Rational
 ********************
 
 1 - The company requires a ML data visualization tool to efficiently and accurately determine a healthy cherry leaf from an infected cherry leaf. 
@@ -98,19 +99,19 @@ differently than healthy Cherry leaves
 
 1. The dataset content came from [Kaggle Cheery Leaves Dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) which contains 4208 images of Cherry Leaves, equally divided between healthy and infected. The data was organized into **Healthy** and **Powdery Mildew** folders in the workspace
 
-2. The data was then cleaned to remove any corrupt or non image files. Once cleaned it was split (using the standard train/test/validate method) into the three aformentioned grouping using the ratio of .7, .2, .1 respectivly. As the groups were on the smaller size, the next step of the process was to augment all three groups to increase the amount of images to be used in the modelling process. The augmentation process uses the existing images and artifically randomly alters and saves them with small alterations such as image rotation, opacity, image placement, and rescaling to create a more robust data source.
+2. The data was then cleaned to remove any corrupt or non image files. Once cleaned it was split (using the standard train/test/validate method) into the three aforementioned grouping using the ratio of .7, .2, .1 respectively. As the groups were on the smaller size, the next step of the process was to augment all three groups to increase the amount of images to be used in the modelling process. The augmentation process uses the existing images and artificially randomly alters and saves them with small alterations such as image rotation, opacity, image placement, and rescaling to create a more robust data source.
 
-3. The modelling process is set of steps to train a ML pipeline to be able to make a prediction on unseen data based off of information (visual) used to train specific details of grouped images. 
-A sequential modal was used to create all three groups of this pipelne so that it can accurately predict unseen images.
+3. The modelling process is set of steps to train a ML pipeline to be able to make a prediction on unseen data based from information (visual) used to train specific details of grouped images. 
+A sequential modal was used to create all three groups of this pipeline so that it can accurately predict unseen images.
 
 4. Evaluation and accuracy testing are the final steps in the pipeline development. This pipeline was tested and scored over 97% accurate which meets the needs of the customer.
 
 
 ********************
-## Dashboard Design and features
+## Dashboard Design and Features
 ********************
 
-1 - The **Project Summary page**, provides critical information concerning the backstory and source of the projects origins and subsequesnt information concerning the customer. Also on the summary page the business requirements chosen by the customer which extrapolate what a successful project will provide.
+1 - The **Project Summary page**, provides critical information concerning the backstory and source of the projects origins and subsequent information concerning the customer. Also on the summary page the business requirements chosen by the customer which extrapolate what a successful project will provide.
 
 ![Screenshot of the summary page](/assets/images/summary_1.jpg)
 ![Screenshot of the summary page](/assets/images/summary_2.jpg)
@@ -131,7 +132,7 @@ A sequential modal was used to create all three groups of this pipelne so that i
 ![Screenshot of the Cherry Leaf Visualizer page](/assets/images/Visual_4.jpg)
 
 ********************
-4 - The **Detector page** is arguable the most important page in the dashboard, as it is the page that allows for the customer to interact with the ML app by uploading images and haveing the app predict if the leaf is infected or not. This page contains:
+4 - The **Detector page** is arguable the most important page in the dashboard, as it is the page that allows for the customer to interact with the ML app by uploading images and having the app predict if the leaf is infected or not. This page contains:
 
         - A link to download a set of cherry leaf images for live prediction 
 
@@ -151,7 +152,7 @@ A sequential modal was used to create all three groups of this pipelne so that i
 
 
 ********************
-6 - The **Conclusions** page provides explainations and outcomes of the hypothesis and business requirements for the project.
+6 - The **Conclusions** page provides explanations and outcomes of the hypothesis and business requirements for the project.
 
 ![Screenshot of the Conclusions Page](/assets/images/conclusions_1.jpg)
 
@@ -290,25 +291,22 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 ### What have I learned from this project?
 
-- The CRISP-DM method for data mining and AI development is a fantastic guide for maintaining perspective on connecting the business goals of the project with the steps of data collection, preperation, modelling and understanding. The model was repeatedly referenced throughout the duration of this project as a means to connect the hypothesis and model to the requireemnts of the stakeholders.
+- The CRISP-DM method for data mining and AI development is a fantastic guide for maintaining perspective on connecting the business goals of the project with the steps of data collection, preparation, modelling and understanding. The model was repeatedly referenced throughout the duration of this project as a means to connect the hypothesis and model to the requirements of the stakeholders.
 
 ![CRISP-DM overview](/assets/images/crisp-dm.jpg)
 
 - I learned that jupyter notebooks and python are very user friendly even when dealing with complex situations such as developing and visual image ML pipeline model. 
 
-- Streamlit is also very user friendly for displaying information and connecting the notebooks outputs and model information to the stakeholder in a conveinent way. 
+- Streamlit is also very user friendly for displaying information and connecting the notebooks outputs and model information to the stakeholder in a convenient way. 
 
 ### What did I gain from this process?
 
-- I personally gained alot of confidence in many area's involved in this path of development. I personally have more confidence in python coding as well as the ability to use python in more diverse ways. 
+- I personally gained alot of confidence in many areas involved in this path of development. I personally have more confidence in python coding as well as the ability to use python in more diverse ways. 
 
-- I also have gained a significant understanding for preditive analysis, data analysis and machine learning processes. The two walk through projects appropriatly framed the extensive lessons that make up the predictive analysis path; however, it was the execution of the project that truly connected the information with the process of understanding a problem, breaking it down in managable steps and completing the outcome goals.
+- I also have gained a significant understanding for predictive analysis, data analysis and machine learning processes. The two walk through projects appropriately framed the extensive lessons that make up the predictive analysis path; however, it was the execution of the project that truly connected the information with the process of understanding a problem, breaking it down in manageable steps and completing the outcome goals.
 
-- Connecting previous lessons from the Fullstack Development path created a strong foundation and level of confidence that allowed for the predicitve analysis path to be less daunting and more manageable. 
+- Connecting previous lessons from the Fullstack Development path created a strong foundation and level of confidence that allowed for the predictive analysis path to be less daunting and more manageable. 
 
-- The utilization of Agile combined with CRISP-DM created a straightforward step by step method to identify small hurdles and steps to accomplish in order to efficiently move throuhgh the whole project smoothly and successfully compelte the outcome goals.
+- The utilization of Agile combined with CRISP-DM created a straightforward step by step method to identify small hurdles and steps to accomplish to efficiently move through the whole project smoothly and successfully compelete the outcome goals.
 
-- The largest realization came from being able to rely upon my previous educational background of Research Psychology and Statistics with the combined support of the CRISP-DM process to more confidently approach predictive analysis.   
-
-
-* Explanations of the visulaizations
+- The largest realization came from being able to rely upon my previous educational background of Research Psychology and Statistics with the combined support of the CRISP-DM process to approach predictive analysis more confidently.   
