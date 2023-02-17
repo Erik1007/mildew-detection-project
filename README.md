@@ -132,13 +132,7 @@ A sequential modal was used to create all three groups of this pipeline so that 
 ![Screenshot of the Cherry Leaf Visualizer page](/assets/images/Visual_4.jpg)
 
 ********************
-4 - The **Detector page** is arguable the most important page in the dashboard, as it is the page that allows for the customer to interact with the ML app by uploading images and having the app predict if the leaf is infected or not. This page contains:
-
-        - A link to download a set of cherry leaf images for live prediction 
-
-        - A User Interface with a file uploader widget. The user should have the capacity to upload multiple images. For each image, it will display the image and a prediction statement, indicating if a cherry leaf is healthy or contains powdery mildew and the probability associated with this statement.
-
-        - A table with the image name and prediction results, and a download button to download the table.
+4 - The **Detector page** is arguable the most important page in the dashboard, as it is the page that allows for the customer to interact with the ML app by uploading images and having the app predict if the leaf is infected or not. 
 
 ![Screenshot of the Detector page](/assets/images/detector_1.jpg)
 ![Screenshot of the Detector page](/assets/images/detector_2.jpg)
