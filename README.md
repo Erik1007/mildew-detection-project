@@ -10,16 +10,16 @@
 3.  [Hypothesis and Validation](#Hypothesis-and-Validation)
 4.  [ML Task Rationale](#ML-Task-Rationale)
 5.  [ML Business Case](#ML-Business-Case)
-6.  [Jupyter Notebook Proces](#jupyter-process)
-7.  [Dashboard Design](#Dashboard-Design)
-8.  [Unfixed Bugs](#Unfixed-Bugs)
-9.  [Deployment](#Deployment)
-10.  [Data Analysis and Machine Learning Libraries](#Data-Analysis-and-Machine-Learning-Libraries)
-11.  [Credits](#Credits)
-12.  [Acknowledgements](#Acknowledgements)
-13.  [Personal Conclusions](#Personal-Conclusions)
+6.  [Project Setup](#Project-setup)
+7.  [Jupyter Notebook Proces](#jupyter-process)
+8.  [Dashboard Design](#Dashboard-Design)
+9.  [Unfixed Bugs](#Unfixed-Bugs)
+10.  [Deployment](#Deployment)
+11.  [Data Analysis and Machine Learning Libraries](#Data-Analysis-and-Machine-Learning-Libraries)
+12.  [Credits](#Credits)
+13.  [Acknowledgements](#Acknowledgements)
+14.  [Personal Conclusions](#Personal-Conclusions)
 ********************
-
 
 
 
@@ -30,8 +30,6 @@
 The customer is in search of a more efficient way of determining if their crop (Cherry Leaves) has been infected with a powdery mildew fungus or if it is healthy. Their current method of crop analysis is to manually inspect the leaves on every tree in their plantation, which is both time consuming and resource expensive.  
 This project is to facilitate the means to create a Predictive Analysis Machine Learning Tool that can accurately and quickly determine if an uploaded image of a Cherry Leaf contains a healthy Cherry Leaf or one infected with a powdery Mildew. 
 The outcome goal of this project is to positively impact the customers' profit margins by combining visual imagery with Machine Learning to save time, labour, resources and most of all, the health of the harvest. 
-
-
 
 
 ********************
@@ -92,6 +90,36 @@ differently than healthy Cherry leaves
 
 5 - Conventional data analysis can be used to visually inspect and differentiate the images of the leaves to determine if the image contains a healthy leaf or one infected with powdery mildew.
 
+
+*******************
+## Project-setup
+*******************
+
+### Agile Project Construct:
+
+* Github **Issues** and **Project** were used to develop a Kanban Agile setup as a method to keep the project headed in a successful direction. Below is a screenshot of the **issues** for this project and each issue had contains a number of associated checkboxes required to close the issue. [Mildew Detector Project](https://github.com/users/Erik1007/projects/5/views/1)
+
+![Mildew Detector Project Screeenshot](/assets/images/agile.jpg)
+
+### CRISP-DM Project Method:
+
+- The CRISP-DM method for data mining and AI development is a fantastic guide for maintaining perspective on connecting the business goals of the project with the steps of data collection, preparation, modelling and understanding. The model was repeatedly referenced throughout the duration of this project as a means to connect the hypothesis and model to the requirements of the stakeholders.
+
+There are six main steps (that are both sequential and fluid) to the CRISP-DM methodology:
+
+1. Business Understanding: Understanding the needs/problems of the stakeholders and the ouctcome goal of the project.
+
+2. Data Understanding: What do we need and where can it be found? (usually provided by the stakeholders).
+
+3. Data Preperation: Cleaning and organizing the data so that it can be used efficiently for modelling and to address the stakeholders outome goals. 
+
+4. Modeling: Choosing the appropraite modeling process to match the data in order to produce complete the outcome goals of the stakeholder.
+
+5. Evaluation: Selecting the correct model to meet the business requirements and outcome goals.
+
+6. Deployment: Providing a means for the stakeholders to access and use the model and the results; meeting the business requirements. 
+
+![CRISP-DM overview](/assets/images/crisp-dm.jpg)
 
 ********************
 ## Jupyter Process
@@ -159,7 +187,7 @@ A sequential modal was used to create all three groups of this pipeline so that 
 * As far as I am aware, there are no unfixed bugs. That is not to say that there is not any; its just that I am not aware of them.
 
 
-* As the data content used for this project has a NOn Disclousre agreement, the dta collection files were not transferred to Heroku, therefor the Image montage option DOES NOT work in the Heroku app, although it does still work in Giy hub. This is not a bug, but rather an intentional and acceptable situation.
+* As the data content used for this project has a NOn Disclousre agreement, the dta collection files were not transferred to Heroku, therefor the Image montage option DOES NOT work in the Heroku app, although it does still work in Github. This is not a bug, but rather an intentional and acceptable situation based on the requirements of the project.
 
 
 ********************
@@ -181,7 +209,7 @@ And combining the Geo-Locations with weather patterns to possibly create infecti
 
 ### Heroku
 
-* The project was deployed to Heroku using the following steps.
+The project was deployed to Heroku using the following steps.
 
 1. Log in to Heroku and create an App
 2. At the Deploy tab, select GitHub as the deployment method.
@@ -270,10 +298,6 @@ And combining the Geo-Locations with weather patterns to possibly create infecti
 ********************
 
 ### What have I learned from this project?
-
-- The CRISP-DM method for data mining and AI development is a fantastic guide for maintaining perspective on connecting the business goals of the project with the steps of data collection, preparation, modelling and understanding. The model was repeatedly referenced throughout the duration of this project as a means to connect the hypothesis and model to the requirements of the stakeholders.
-
-![CRISP-DM overview](/assets/images/crisp-dm.jpg)
 
 - I learned that jupyter notebooks and python are very user friendly even when dealing with complex situations such as developing and visual image ML pipeline model. 
 
