@@ -11,7 +11,7 @@
 4.  [ML Task Rationale](#ML-Task-Rationale)
 5.  [ML Business Case](#ML-Business-Case)
 6.  [Project Setup](#Project-setup)
-7.  [Jupyter Notebook Proces](#jupyter-process)
+7.  [Jupyter Notebook Process](#jupyter-process)
 8.  [Dashboard Design](#Dashboard-Design)
 9.  [Unfixed Bugs](#Unfixed-Bugs)
 10.  [Deployment](#Deployment)
