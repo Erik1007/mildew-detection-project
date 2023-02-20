@@ -187,7 +187,7 @@ A sequential modal was used to create all three groups of this pipeline so that 
 * As far as I am aware, there are no unfixed bugs. That is not to say that there is not any; its just that I am not aware of them.
 
 
-* As the data content used for this project has a NOn Disclousre agreement, the dta collection files were not transferred to Heroku, therefor the Image montage option DOES NOT work in the Heroku app, although it does still work in Github. This is not a bug, but rather an intentional and acceptable situation based on the requirements of the project.
+* As the data content used for this project has a Non-Disclousre Agreement, the data collection files were not transferred to Heroku, therefor the Image Montage option DOES NOT work in the Heroku app, although it does still work in Github. This is not a bug, but rather an intentional and acceptable situation based on the requirements of the project.
 
 
 ********************
